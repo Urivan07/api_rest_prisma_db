@@ -43,6 +43,27 @@ const prisma = new PrismaClient();
       },
     });
 
+    const e2_1 = await prisma.explorer2.upsert({
+        where: { name: 'Woopa' },
+        update: {},
+        create: {
+          name: 'Woopa',
+                  name: 'ajolonauta 2 - 1',
+                  lang : "abc",
+                  missionCommander: 'CarloGilmar'
+        },
+      });
+  
+      const e2_2 = await prisma.explorer2.upsert({
+        where: { name: 'Woopa1' },
+        update: {},
+        create: {
+          name: 'ajolonauta 2 - 2',
+          lang : "abc",
+          missionCommander: 'CarloGilmar'
+        },
+      });
+
     console.log('Create 3 explorers');
   } catch(e) {
     console.error(e);
