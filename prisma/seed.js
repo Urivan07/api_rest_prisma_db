@@ -47,10 +47,9 @@ const prisma = new PrismaClient();
         where: { name: 'Woopa' },
         update: {},
         create: {
-          name: 'Woopa',
-                  name: 'ajolonauta 2 - 1',
-                  lang : "abc",
-                  missionCommander: 'CarloGilmar'
+          name: 'ajolonauta 2 - 1',
+          lang : "abc",
+          missionCommander: 'CarloGilmar'
         },
       });
   
